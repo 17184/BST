@@ -78,7 +78,6 @@ void BST<T>::search(Node* root, const T& key) {
 		throw std::tunrime_error("Tree is empty\n");
 	}
 	while(root) {
-		while(root -> left){
 			if(root -> val == key) {
 				std::cout << "Val found in tree\n";
 				return;
@@ -89,7 +88,6 @@ void BST<T>::search(Node* root, const T& key) {
 			else {
 				root = root -> left;
 			}
-		}
 	}
 }
 */
